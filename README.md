@@ -1,4 +1,4 @@
-# Deskmini-310-Hackintosh
+# Deskmini-310-Hackintosh 
 macOS Mojave 10.14.2 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ## Working Devices
@@ -39,6 +39,7 @@ macOS Mojave 10.14.2 on Deskmini 310 + i5 8500 + BCM94352Z
 * System Definitions: Macmini6,2
 
 ### Clover Configurator
+
 * ACPI: 
   * Patches: 
     * HDAS -> HDEF
@@ -65,3 +66,20 @@ macOS Mojave 10.14.2 on Deskmini 310 + i5 8500 + BCM94352Z
   * Product Name: Macmini8,1
   
 Install Drivers: EmuVariableUefi-64 (*Fix shutdown)
+
+#### Bluetooth/WIFI
+
+Ref: [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423)
+
+#### Fix shutdown
+
+Ref: [[SUCCESS] Ongoing Status of Designare Z390 with i7-9700K](https://www.tonymacx86.com/threads/success-ongoing-status-of-designare-z390-with-i7-9700k.266065/)
+
+#### Fix audio
+
+Ref: https://github.com/YCF/Hackintosh-EFI-for-deskmini-310-i3-8100
+
+#### Fix dual monitors
+
+Ref: [[Guide] Intel Framebuffer patching using WhateverGreen](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/post-1856330)
+
