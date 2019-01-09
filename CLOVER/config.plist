@@ -219,6 +219,33 @@
 				<data>
 				AACSPg==
 				</data>
+				<key>AAPL02,override-no-connect</key>
+				<data>
+				AP///////wAQrGfQU1FUMC8aAQOAPCJ47kRVqVVNnSYP
+				UFSlSwCzANEAcU+pQIGAd4ABAQEBVl4AoKCgKVAwIDUA
+				VVAhAAAaAAAA/wBDNjVSRDZCTDBUUVMKAAAA/ABERUxM
+				IFUyNzE1SAogAAAA/QA4Vh5xHgAKICAgICAgAWYCAyLx
+				TxAFBAMCBxYBFB8SEyAhIiMJBweDAQAAZQMMABAAAjqA
+				GHE4LUBYLCUAVVAhAAAeAR2AGHEcFiBYLCUAVVAhAACe
+				AR0AclHQHiBuKFUAVVAhAAAejArQiiDgLRAQPpYAVVAh
+				AAAYSD8AyoCAMEAaUBMAVVAhAAAeAAAAlA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-flags</key>
+				<data>
+				xwMAAA==
+				</data>
+				<key>framebuffer-con2-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-patch-enable</key>
+				<data>
+				AQAAAA==
+				</data>
 			</dict>
 		</dict>
 		<key>USB</key>
