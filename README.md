@@ -1,5 +1,5 @@
 # Deskmini-310-Hackintosh 
-macOS Mojave 10.14.2 on Deskmini 310 + i5 8500 + BCM94352Z
+macOS Mojave 10.14.4 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ## Working Devices
 
@@ -68,6 +68,10 @@ macOS Mojave 10.14.2 on Deskmini 310 + i5 8500 + BCM94352Z
   * Product Name: Macmini8,1
   
 Install Drivers: EmuVariableUefi-64 (*Fix shutdown)
+
+#### USB 
+
+Ref: [List of Hackintosh USB Port Limit Patches (10.14 Updated)](https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/)
 
 #### Bluetooth/WIFI
 
