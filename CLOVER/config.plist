@@ -217,22 +217,43 @@
 			<dict>
 				<key>AAPL,ig-platform-id</key>
 				<data>
-				AACSPg==
+				BwCbPg==
 				</data>
-				<key>AAPL02,override-no-connect</key>
+				<key>device-id</key>
 				<data>
-				AP///////wAQrGfQU1FUMC8aAQOAPCJ47kRVqVVNnSYP
-				UFSlSwCzANEAcU+pQIGAd4ABAQEBVl4AoKCgKVAwIDUA
-				VVAhAAAaAAAA/wBDNjVSRDZCTDBUUVMKAAAA/ABERUxM
-				IFUyNzE1SAogAAAA/QA4Vh5xHgAKICAgICAgAWYCAyLx
-				TxAFBAMCBxYBFB8SEyAhIiMJBweDAQAAZQMMABAAAjqA
-				GHE4LUBYLCUAVVAhAAAeAR2AGHEcFiBYLCUAVVAhAACe
-				AR0AclHQHiBuKFUAVVAhAAAejArQiiDgLRAQPpYAVVAh
-				AAAYSD8AyoCAMEAaUBMAVVAhAAAeAAAAlA==
+				mz4AAA==
+				</data>
+				<key>enable-hdmi20</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-busid</key>
+				<data>
+				AgAAAA==
+				</data>
+				<key>framebuffer-con1-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con1-type</key>
+				<data>
+				AAgAAA==
+				</data>
+				<key>framebuffer-con2-enable</key>
+				<data>
+				AQAAAA==
+				</data>
+				<key>framebuffer-con2-index</key>
+				<data>
+				/////w==
 				</data>
 				<key>framebuffer-patch-enable</key>
 				<data>
 				AQAAAA==
+				</data>
+				<key>framebuffer-portcount</key>
+				<data>
+				AgAAAA==
 				</data>
 			</dict>
 		</dict>
