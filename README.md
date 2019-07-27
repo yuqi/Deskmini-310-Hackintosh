@@ -33,7 +33,7 @@ macOS Mojave 10.14.6 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ### MultiBeast 11.3.0
 
-Quick Start:
+* Quick Start:
   * UEFI Boot Mode
 * Drivers:
   * Audio: AppleALC
