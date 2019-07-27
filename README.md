@@ -1,5 +1,5 @@
 # Deskmini-310-Hackintosh
-macOS Mojave 10.14.4 on Deskmini 310 + i5 8500 + BCM94352Z
+macOS Mojave 10.14.6 on Deskmini 310 + i5 8500 + BCM94352Z
 =======
 
 ## Working Devices
@@ -19,8 +19,6 @@ macOS Mojave 10.14.4 on Deskmini 310 + i5 8500 + BCM94352Z
 
 * Load UEFI Defaults
 * Advanced
-  * CPU Configuration
-    * Intel Virtualization Technology: Disabled
   * Chipset Configuration
     * VT-d: Disabled
     * Onboard HD Audio: Enabled
@@ -33,13 +31,17 @@ macOS Mojave 10.14.4 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ## Post Installtion
 
-### MultiBeast 11.0.1
+### MultiBeast 11.3.0
 
+Quick Start:
+  * UEFI Boot Mode
 * Drivers:
   * Audio: AppleALC
+  * Audio: 100 / 200 / 300 Series Audio Support (HDAS -> HDEF)
   * Network: IntelMausiEthernet v2.4.0
-  * USB: Remove XHCI USB Port Limit + USBInjectAll
-* System Definitions: Macmini6,2
+  * USB: Remove XHCI USB Port Limit
+  * USB: USBInjectAll
+* System Definitions: Macmini8,1
 
 ### Clover Configurator
 
@@ -53,7 +55,7 @@ macOS Mojave 10.14.4 on Deskmini 310 + i5 8500 + BCM94352Z
     * slide=0(*Fix shutdown)
 * Devices
   * Audio
-    * Inject: 3
+    * Inject: 28
   * Properties
     * PciRoot(0x0)/Pci(0x1f,0x3) (*Fix audio)
       * layout-id: 1C000000
@@ -93,5 +95,7 @@ https://github.com/YCF/Hackintosh-EFI-for-deskmini-310-i3-8100
 #### Fix dual monitors
 
 [Install hackintosh(Mojave 10.14.x) in Asrock deskmini 310](https://github.com/liminghuang/asrock_deskmini310_hackintosh)
+
 [Mojave UHD 630 on i5 8400 issues, have tried everything](https://www.tonymacx86.com/threads/mojave-uhd-630-on-i5-8400-issues-have-tried-everything.269368/page-3#post-1889723)
+
 [[Guide] Intel Framebuffer patching using WhateverGreen](https://www.tonymacx86.com/threads/guide-intel-framebuffer-patching-using-whatevergreen.256490/post-1856330)
