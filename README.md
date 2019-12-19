@@ -1,4 +1,3 @@
-# Deskmini-310-Hackintosh
 macOS Catalina 10.15.2 on Deskmini 310 + i5 8500 + BCM94352Z
 =======
 
@@ -29,15 +28,64 @@ macOS Catalina 10.15.2 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ### Post Installtion
 
-1. Install Clover bootloader v2.5k r5100 (https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5100)
-2. Mount EFI (Clover Configurator etc.)
-3. Clone this repo to EFI volume
+#### Clover bootloader
+
+Install Clover bootloader v2.5k r5100
+
+[Release v2.5k-5100](https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5100)
+
+#### Clover Configurator
+
+* ACPI:
+  * Patches:
+    * HDAS -> HDEF
+    * EHC1 -> EC01
+    * EHC2 -> EH02
+* Boot
+  * Arguments
+    * slide=0(*Fix shutdown)
+* Devices
+  * Audio
+    * Inject: 28
+  * Properties
+    * PciRoot(0x0)/Pci(0x1f,0x3) (*Fix audio)
+      * layout-id: 1C000000
+      * device-id: 48a30000
+    * PciRoot(0x0)/Pci(0x2,0x0) (*Fix dual monitors)
+      * AAPL,ig-platform-id: 07009B3E
+      * device-id: 9B3E0000
+      * enable-hdmi20: 01000000
+      * framebuffer-con1-busid: 02000000
+      * framebuffer-con1-enable: 01000000
+      * framebuffer-con1-type: 00080000
+      * framebuffer-con2-enable: 01000000
+      * framebuffer-con2-index: FFFFFFFF
+      * framebuffer-patch-enable: 01000000
+      * framebuffer-portcount: 02000000
+* SMBIOS
+  * Product Name: Macmini8,1
+* Install Drivers
+  * DRIVERS UEFI 64 BIT
+    * EmuVariableUefi
+* Kexts Install
+  * OS Version: Other
+    * Lilu
+    * WhateverGreen (*Graphics)
+    * AirportBrcmFixup (*WIFI)
+    * IntelMausi (*Ethernet)
+    * BrcmBluetoothInjector (*Bluetooth)
+    * BrcmFirmwareData (*Bluetooth)
+    * BrcmPatchRAM3 (*Bluetooth)
+
+### References
 
 #### USB
 
-Ref: [List of Hackintosh USB Port Limit Patches (10.14 Updated)](https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/)
+[List of Hackintosh USB Port Limit Patches (10.15 Updated)](https://hackintosher.com/forums/thread/list-of-hackintosh-usb-port-limit-patches-10-14-updated.467/)
 
 #### Bluetooth/WIFI
+
+[BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM)
 
 [Broadcom WiFi/Bluetooth [Guide]](https://www.tonymacx86.com/threads/broadcom-wifi-bluetooth-guide.242423)
 
