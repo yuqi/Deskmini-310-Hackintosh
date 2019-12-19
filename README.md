@@ -13,7 +13,7 @@ macOS Catalina 10.15.2 on Deskmini 310 + i5 8500 + BCM94352Z
 
 ## Guide
 
-### 1. BIOS
+### BIOS
 
 * Load UEFI Defaults
 * Advanced
@@ -27,52 +27,11 @@ macOS Catalina 10.15.2 on Deskmini 310 + i5 8500 + BCM94352Z
 * Security
   * Secure Boot: Disabled(by default)
 
-## Post Installtion
+### Post Installtion
 
-### MultiBeast 11.3.0
-
-* Quick Start:
-  * UEFI Boot Mode
-* Drivers:
-  * Audio: AppleALC
-  * Audio: 100 / 200 / 300 Series Audio Support (HDAS -> HDEF)
-  * Network: IntelMausiEthernet v2.4.0
-  * USB: Remove XHCI USB Port Limit
-  * USB: USBInjectAll
-* System Definitions: Macmini8,1
-
-### Clover Configurator
-
-* ACPI:
-  * Patches:
-    * HDAS -> HDEF
-    * EHC1 -> EC01
-    * EHC2 -> EH02
-* Boot
-  * Arguments
-    * slide=0(*Fix shutdown)
-* Devices
-  * Audio
-    * Inject: 28
-  * Properties
-    * PciRoot(0x0)/Pci(0x1f,0x3) (*Fix audio)
-      * layout-id: 1C000000
-      * device-id: 48a30000
-    * PciRoot(0x0)/Pci(0x2,0x0) (*Fix dual monitors)
-      * AAPL,ig-platform-id: 07009B3E
-      * device-id: 9B3E0000
-      * enable-hdmi20: 01000000
-      * framebuffer-con1-busid: 02000000
-      * framebuffer-con1-enable: 01000000
-      * framebuffer-con1-type: 00080000
-      * framebuffer-con2-enable: 01000000
-      * framebuffer-con2-index: FFFFFFFF
-      * framebuffer-patch-enable: 01000000
-      * framebuffer-portcount: 02000000
-* SMBIOS:
-  * Product Name: Macmini8,1
-
-Install Drivers: EmuVariableUefi-64 (*Fix shutdown)
+1. Install Clover bootloader v2.5k r5100 (https://github.com/CloverHackyColor/CloverBootloader/releases/tag/5100)
+2. Mount EFI (Clover Configurator etc.)
+3. Clone this repo to EFI volume
 
 #### USB
 
